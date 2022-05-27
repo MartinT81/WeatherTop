@@ -5,7 +5,9 @@ import play.Logger;
 import models.Station;
 import models.Reading;
 import play.mvc.Controller;
+
 import java.util.Date;
+
 import static models.Station.convertWindDirection;
 import static models.Station.convertBeaufort;
 import static Utilities.Utilities.weatherCode;
@@ -43,7 +45,7 @@ public class StationCtrl extends Controller {
         render("station.html", station);
     }
 
-    public static void deletereading (Long id, Long readingid){
+    public static void deletereading(Long id, Long readingid) {
         Station station = Station.findById(id);
         Reading reading = Reading.findById(readingid);
         Logger.info("Removing" + reading.code);
@@ -53,9 +55,9 @@ public class StationCtrl extends Controller {
         render("station.html", station);
     }
 
-    public static void addReading (Long id,int code, double temp, double windspeed, int windDirection,
-                                   int pressure){
-        Date date = new Date (System.currentTimeMillis());
+    public static void addReading(Long id, int code, double temp, double windspeed, int windDirection,
+                                  int pressure) {
+        Date date = new Date(System.currentTimeMillis());
         Reading reading = new Reading(code, temp, windspeed, windDirection, pressure, date);
         Station station = Station.findById(id);
         station.readings.add(reading);
@@ -64,8 +66,8 @@ public class StationCtrl extends Controller {
     }
 
 
-    public static void addLatestReading (Long id,int code, double temp, double windspeed, int windDirection,
-                                         int pressure){
+    public static void addLatestReading(Long id, int code, double temp, double windspeed, int windDirection,
+                                        int pressure) {
         Date date = new Date(System.currentTimeMillis());
         Reading reading = new Reading(code, temp, windspeed, windDirection, pressure, date);// work on adding date.
         Station station = Station.findById(id);
