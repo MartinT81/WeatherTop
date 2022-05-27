@@ -1,0 +1,86 @@
+Reading(s1):
+  date: 2022-05-18 18.53
+  code: 400
+  temp: 21.2
+  windspeed: 5.5
+  windDirection: 200
+  pressure: 1001
+Reading(s2):
+  date: 2022-05-19 08.50
+  code: 100
+  temp: 12.8
+  windspeed: 6
+  windDirection: 200
+  pressure: 1004
+Reading(s3):
+  date: 2022-05-20 15.00
+  code: 500
+  temp: 14
+  windspeed: 8.1
+  windDirection: 90
+  pressure: 1000
+Reading(s4):
+  date: 2022-05-21 13.00
+  code: 400
+  temp: 12.6
+  windspeed: 2
+  windDirection: 120
+  pressure: 999
+Reading(s5):
+  date: 2022-05-24
+  code: 600
+  temp: 17
+  windspeed: 3.0
+  windDirection: 125
+  pressure: 1003
+Reading(s6):
+  date: 2022-05-22 09.00
+  code: 700
+  temp: 10.3
+  windspeed: 12
+  windDirection: 135
+  pressure: 1004
+
+Reading(s7):
+  date: 2022-05-23 10.30
+  code: 700
+  temp: 9
+  windspeed: 6
+  windDirection: 110
+  pressure: 1001
+Reading(s8):
+  date: 222-05-24 11.00
+  code: 400
+  temp: 13
+  windspeed: 8
+  windDirection: 300
+  pressure: 1004
+
+Station(p1):
+  title: Tramore
+  latitude: 52.165236500
+  longitude: -7.12365400
+  readings:
+    - s1
+    - s2
+    - s3
+    - s4
+    - s5
+Station(p2):
+  title: Cork City
+  latitude: 72.165236500
+  longitude: -9.12365400
+  readings:
+    - s6
+    - s7
+    - s8
+
+Member(m1):
+  firstname: homer
+  lastname: simpson
+  email: homer@simpson.com
+  password: secret
+  playlists:
+    - p1
+    - p2
+
