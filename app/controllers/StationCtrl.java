@@ -69,7 +69,7 @@ public class StationCtrl extends Controller {
     public static void addLatestReading(Long id, int code, double temp, double windspeed, int windDirection,
                                         int pressure) {
         Date date = new Date(System.currentTimeMillis());
-        Reading reading = new Reading(code, temp, windspeed, windDirection, pressure, date);// work on adding date.
+        Reading reading = new Reading(code, temp, windspeed, windDirection, pressure, date);
         Station station = Station.findById(id);
         station.readings.add(reading);
         station.save();
