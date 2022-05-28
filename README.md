@@ -5,7 +5,9 @@ To create an application for WeatherTop Inc. To assist WeatherTop members to sub
 The application displays weather analytics for the station. This relates to multiple stations in Ireland.
 
 Grading bands:All requirements for release 2 have been met.
+
 ........
+
 Reading - 
 To achieve release 2 for Reading, Code Temp and Wind Speed from Baseline to Pressure and Time/Date stamp have been included.
 The Station controller pulls information from the Reading Model and initializes it through the station.html view. 
@@ -14,7 +16,9 @@ Code examples -
 line 68- StationCtrl.java  "Date date = new Date(System.currentTimeMillis());" Draws the data from
 line 49-Reading.java in Models "public Date getDate() { return date; }" and initializes it through
 line 10-station.html "#{listreadings station:station /}" via listreadings.html in tags line 15 to 17. 
+
 ........
+
 Station - 
 Release 2 includes Station name, latest weather such as Temp, C anf F, wind on BFT, pressure and longitude and Latitude, max/min temp, wind and pressure. 
 Here the StationCtrl in controllers pulls the data required from Station.java in Models, Utilities/Utilities and initializes/renders it again through station.html in views. 
@@ -45,12 +49,15 @@ Members can create and delete stations and readings from their dashboard. Upon e
 readings are entered they will display as the latest readings. Stations are displayed alphabetically. 
 
 Line 22 - controllers/Dashboard.java "Collections.sort(stations, Comparator.comparing(Station::getName, String.CASE_INSENSITIVE_ORDER));"
+
 ........
+
 Code- The project code has been deployed, a repository on Github created and history established.
 Deployed, http://nameless-shore-39362.herokuapp.com/
 Github, https://github.com/MartinT81/WeatherTop.git
 
 ........
+
 References-
 The majority of the project was created using materials from lectures and labs.
 https://github.com/Norahackett/WeatherTop-/tree/master/app
