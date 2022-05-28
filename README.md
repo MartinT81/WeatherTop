@@ -42,7 +42,9 @@ login - Via login page again stacked segment form login.html.
 New station - Can be created via the stacked segment form at the bottem of the dashboard, addstation.html
 
 Members can create and delete stations and readings from their dashboard. Upon entering a station a sumary of the latest readings will be displayed and when new
-readings are entered they will display as the latest readings. 
+readings are entered they will display as the latest readings. Stations are displayed alphabetically. 
+
+Line 22 - controllers/Dashboard.java "Collections.sort(stations, Comparator.comparing(Station::getName, String.CASE_INSENSITIVE_ORDER));"
 ........
 Code- The project code has been deployed, a repository on Github created and history established.
 Deployed, http://nameless-shore-39362.herokuapp.com/
