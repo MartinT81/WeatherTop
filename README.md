@@ -16,7 +16,7 @@ The Station controller pulls information from the Reading Model and initializes 
 
 Code examples -
 
-line 68- StationCtrl.java  "Date date = new Date(System.currentTimeMillis());" When new readings are entered the current time and date are displayed.
+line 60- StationCtrl.java  "Date date = new Date(System.currentTimeMillis());" When new readings are entered the current time and date are displayed.
 
 line 49-Reading.java in Models "public Date getDate() { return date; }" 
 
@@ -37,7 +37,7 @@ Line 63 to 91 - Models/Station.java converting wind speed to beaufort.
 
 Line 58 to 66 - Controllers/StationCtrl addReading method. 
 
-Line 1 to 17 - views/tags/addstation.html is a form to create a new station this will include the imputting of station name, longitude and longitude.
+Line 1 to 17 - views/tags/addstation.html is a form to create a new station this will include the imputing of station name, longitude and longitude.
 
 Line 46 & 47 - models/Station.java, Longitude and latitude objects.
 
@@ -45,7 +45,9 @@ Line 11 - Utilities/Utilities, getMinTemp method.
 
 Line 25  Utilities/Utilities, getMaxTemp method.
 
-Line 50 & 54 - models/Station.java, windChill getter and setter. Line 93 to 127 wind compass.
+Line 50 & 54 - models/Station.java, windChill getter and setter. 
+
+Line 93 to 127 wind compass.
 
 Line 65 - Utilities/Utilities, getLatestWindDirection after new readings are inputted.
 
@@ -67,6 +69,10 @@ Members can create and delete stations and readings from their dashboard. Upon e
 readings are entered they will display as the latest readings. Stations are displayed alphabetically. 
 
 Line 22 - controllers/Dashboard.java "Collections.sort(stations, Comparator.comparing(Station::getName, String.CASE_INSENSITIVE_ORDER));"
+
+Line 22 to 26 - models/Member.java, Member class for creating a new member in WeatherTop. First Name Surname , email and password. 
+
+Line 16 to 20 - controllers/ Account.java, method to allow a new member to register
 
 ........
 
