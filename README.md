@@ -14,18 +14,20 @@ The Station controller pulls information from the Reading Model and initializes 
 
 Code examples -
 
-line 68- StationCtrl.java  "Date date = new Date(System.currentTimeMillis());" 
+line 68- StationCtrl.java  "Date date = new Date(System.currentTimeMillis());" When new readings are entered the current time and date are displayed.
 
-line 49-Reading.java in Models "public Date getDate() { return date; }" and initializes it through
+line 49-Reading.java in Models "public Date getDate() { return date; }" 
 
-line 10-station.html "#{listreadings station:station /}" via listreadings.html in tags line 15 to 17. 
+line 10-station.html "#{listreadings station:station /}" via listreadings.html in tags line 15 to 17.
+
+Line 29 to 71 - Reading.java, getters and setters for Code, Temp, Wind speed and direction etc. 
 
 ........
 
 Station - 
 Release 2 includes Station name, latest weather such as Temp, C anf F, wind on BFT, pressure and longitude and Latitude, max/min temp, wind and pressure. 
 Here the StationCtrl in controllers pulls the data required from Station.java in Models, Utilities/Utilities and initializes/renders it again through station.html in views. 
-There are pre-populated stations contained within the application. The readings are drawn from data.yml YAML in conf. including pre-populated longitudes and latitudes. 
+There are pre-populated stations contained within the application. The readings are drawn from data.yml YAML in app/conf. including pre-populated longitudes and latitudes. 
 
 Code examples-
 
