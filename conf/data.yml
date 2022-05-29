@@ -57,7 +57,7 @@ Reading(s8):
   pressure: 1004
 
 Station(p1):
-  title: Tramore
+  title: Kenmare
   latitude: 52.165236500
   longitude: -7.12365400
   readings:
