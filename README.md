@@ -4,7 +4,9 @@ Assignment Brief:
 To create an application for WeatherTop Inc. To assist WeatherTop members to submit weather readings from their station and submit via the web site. 
 The application displays weather analytics for the station. This relates to multiple stations in Ireland.
 
-Grading bands:All requirements for release 2 have been met.
+Grading bands:All requirements for release 2 have been met. 
+
+Bugs - The weather Icons are not displaying in the deployed version of the app. 
 
 ........
 
@@ -70,7 +72,7 @@ Line 22 - controllers/Dashboard.java "Collections.sort(stations, Comparator.comp
 
 Code- The project code has been deployed, a repository on Github created and history established.
 
-Deployed, https://shielded-inlet-33851.herokuapp.com/
+Deployed, https://arcane-fortress-17218.herokuapp.com/
 
 Github, https://github.com/MartinT81/WeatherTop.git
 
