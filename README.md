@@ -82,3 +82,5 @@ The majority of the project was created using materials from lectures and labs.
 https://github.com/Norahackett/WeatherTop-/tree/master/app
 
 https://purepng.com/photo/3510/symbols-weather-icon-ios-7
+
+https://semantic-ui.com/
