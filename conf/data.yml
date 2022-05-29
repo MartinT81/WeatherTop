@@ -76,9 +76,9 @@ Station(p2):
     - s8
 
 Member(m1):
-  firstname: homer
+  firstname: martin
   lastname: simpson
-  email: homer@simpson.com
+  email: martin@simpson.com
   password: secret
   playlists:
     - p1
