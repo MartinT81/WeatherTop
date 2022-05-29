@@ -4,7 +4,8 @@ Assignment Brief:
 To create an application for WeatherTop Inc. To assist WeatherTop members to submit weather readings from their station and submit via the web site. 
 The application displays weather analytics for the station. This relates to multiple stations in Ireland.
 
-Grading bands:All requirements for release 2 have been met. 
+Grading bands:All requirements for release 2 have been met. Some elements of release 3 achieved, Tim/Date stamp, Latest reading displayed withing the station, a commit history for Github
+in submission. 
 
 Bugs - The weather Icons are not displaying in the deployed version of the app. 
 
