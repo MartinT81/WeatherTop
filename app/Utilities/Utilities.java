@@ -1,11 +1,11 @@
 package Utilities;
 
 import models.Reading;
+
 import java.util.HashMap;
 import java.util.List;
 
 public class Utilities {
-
 
 
     public static double getminTemp(List<Reading> readings) {
